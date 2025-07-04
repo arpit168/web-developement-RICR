@@ -1,0 +1,85 @@
+.container{
+  background-color: blue;
+  width: 70vw;
+  height: 35vh;
+  padding: 15%;
+  display: flex;
+  gap: 70px;
+  align-items:end;
+
+
+}
+.box1{
+  height:20em ;
+  width: 20em;
+  background-color: white;
+ padding: 10px;
+ margin: 1%;
+ border-radius: 10px;
+ 
+}
+
+.box2{
+   height:30em ;
+  width: 25em;
+  background-color: white;
+ padding: 10px;
+ margin: 1%;
+ border-radius: 10px;
+
+}
+.lo{
+  text-decoration: underline blue;
+}
+.eml{
+ border: none; 
+}
+.pass{
+  border: none;
+}
+
+.hr{
+  align-items: left;
+  width: 90%;
+}
+.fgt{
+  gap: 20% ;
+  display: flex; 
+}
+.btn{
+  padding: 10px 80px ;
+  margin: 10px 40px ;
+  background-color: rgb(35, 35, 138);
+  color: white;
+  border-radius: 5px;
+}
+.sign{
+  border: none;
+  color: blue;
+}
+.do{
+  text-align: center;
+}
+.seen{
+  align-items: end;
+}
+
+.re{
+  text-decoration: underline blue;
+}
+.ab{
+  border: none;
+}
+.type{
+  border: none;
+}
+.ss{
+  display: flex;
+  gap: 100px;
+
+}
+.sp{
+  display: flex;
+  gap: 180px;
+
+}
