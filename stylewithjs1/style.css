@@ -1,0 +1,14 @@
+#headbox{
+    display: flex;
+}
+#secondbox{
+    width: 300px;
+    height: 200px;
+    border: 2px solid red;
+    margin-left: 20px;
+    text-align: center;
+}
+#thirdbox{
+     margin-left: 20px;
+     gap: 2px;
+}
