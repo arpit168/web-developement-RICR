@@ -499,6 +499,8 @@ font-weight: 700;
   margin-top: 50px;
   background-color: rgb(243, 223, 11);
   border-radius: 4px;
+  color: white;
+  font-weight: 700;
 }
 
 .boxrun{
@@ -530,13 +532,82 @@ font-weight: 700;
 /* _____________________box5 done _____________ */
 .box6{
   width: 1250px;
-  height: 300px;
+  height: 400px;
+  background-color: orange;
 }
 .are{
   text-align: center;
   font-size: 20px;
-  margin-top: 50px;
-  background-image: url();
-
+  padding-top: 50px;
+  
 
 }
+.bell{
+  border: none;
+  width: 250px;
+  height: 40px;
+  margin-top: 20px;
+  background-color: orangered;
+  border-radius: 4px;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+/* ______________________________________________ */
+.box7{
+  width: 1150px;
+  height: 800px;
+  background-color: rgb(18, 16, 16);
+  color: white;
+  padding: 0px 50px;
+  
+}
+.our{
+  padding: 50px 0px 0px 100px ; 
+}
+.tr{
+  margin: 0px 75px;
+}
+.top{
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  text-align: left;
+  padding: 20px 0px 25px 100px;
+}
+
+.help{
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  text-align: left;
+  padding: 20px 75px 50px 10px;
+}
+.follow{
+  padding-left: 75px;
+  color: rgb(181, 169, 169);
+}
+.live{
+  width:200px ;
+  height: 40px;
+  text-align: center;
+  margin-top: 10px;
+  background-color: rgb(176, 176, 176);
+  
+}
+.eenvelop{
+  color: rgb(72, 72, 72);
+   height: 40px;
+}
+
+.envelop{
+  border: none;
+  color: rgb(176, 176, 176);
+  height: 20px;
+  margin-bottom: 10px;
+}
+
+
+
+
+
