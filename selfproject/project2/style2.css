@@ -1,0 +1,13 @@
+*{
+    background-color: red;
+    display: flex;
+
+}
+
+#container{
+    width: 400px;
+    height: 350px;
+    background-color: lightseagreen;
+   
+}
+
