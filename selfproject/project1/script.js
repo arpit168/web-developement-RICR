@@ -1,4 +1,4 @@
-var istatus= document.querySelector("h5")
+var gpt= document.querySelector("h5")
 
 var btn = document.querySelector("#add")
 var check =0
@@ -6,14 +6,14 @@ var check =0
 btn.addEventListener("click", function(){
     if( check == 0){
 
-    istatus.innerHTML= " Friends"
-    istatus.style.color = "green"
+    gpt.innerHTML= " Friends"
+    gpt.style.color = "green"
     btn.innerHTML = " Remove friend"
     check=1
     }
     else{
-        istatus.innerHTML ="Stranger"
-        istatus.style.color = "Red"
+        gpt.innerHTML ="Stranger"
+        gpt.style.color = "Red"
          btn.innerHTML = " Add friend"
         check=0
     }
