@@ -587,25 +587,21 @@ font-weight: 700;
   padding-left: 75px;
   color: rgb(181, 169, 169);
 }
-.live{
-  width:200px ;
-  height: 40px;
-  text-align: center;
-  margin-top: 10px;
-  background-color: rgb(176, 176, 176);
-  
-}
-.eenvelop{
-  color: rgb(72, 72, 72);
-   height: 40px;
-}
 
 .envelop{
   border: none;
-  color: rgb(176, 176, 176);
-  height: 20px;
-  margin-bottom: 10px;
+  background-color: grey;
+  color: #fff;
+  height: 30px;
+  width: 250px;
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  font-weight: 500;
+  border-radius: 5px;
 }
+
+
 
 
 
