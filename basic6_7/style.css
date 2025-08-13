@@ -456,7 +456,7 @@ font-weight: 700;
 /* /________________box4 done _____________________ */
 .box5{
   background-color: rgb(227, 215, 215);
-  width: 1250px;
+  width: 1525px;
   height: 500px;
   padding-top: 100px;
   box-shadow:  black;
@@ -506,7 +506,7 @@ font-weight: 700;
 .boxrun{
 
   background-color: rgb(227, 215, 215);
-  width: 1250px;
+  width: 1525px;
   height: 500px;
   padding-top: px;
 }
@@ -531,7 +531,7 @@ font-weight: 700;
 }
 /* _____________________box5 done _____________ */
 .box6{
-  width: 1250px;
+  width: 1525px;
   height: 400px;
   background-color: orange;
 }
@@ -555,7 +555,7 @@ font-weight: 700;
 }
 /* ______________________________________________ */
 .box7{
-  width: 1150px;
+  width: 1425px;
   height: 800px;
   background-color: rgb(18, 16, 16);
   color: white;
@@ -586,11 +586,13 @@ font-weight: 700;
 .follow{
   padding-left: 75px;
   color: rgb(181, 169, 169);
+;
+
 }
 
 .envelop{
   border: none;
-  background-color: grey;
+  background-color: gainsboro;
   color: #fff;
   height: 30px;
   width: 250px;
@@ -599,6 +601,7 @@ font-weight: 700;
   gap: 10px;
   font-weight: 500;
   border-radius: 5px;
+  background: rgb(0, 0, 0);
 }
 
 
