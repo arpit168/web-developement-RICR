@@ -9,13 +9,13 @@ import arpit from "../assets/arpit's pic.jpg";
 
 const Sidebar = () => {
   return (
-    <div className="  w-4/14 h-Screen  rounded-2xl  ">
-      <div className=" bg-gray-900 m-10 p-10 rounded-2xl flex  flex-col gap-2 mt-5">
+    <div className="  w-4/14 h-Screen  rounded-2xl   ">
+      <div className=" bg-gray-900 m-10 p-10 rounded-2xl flex  flex-col gap-2 mt-5 ">
         <div className=" bg-gray-500 p-5 rounded-xl ">
           <img
             src={arpit}
             width={400}
-            className=" rounded-2xl  hover:scale-110 transition-transform duration-200 pb-5  "
+            className=" rounded-2xl  hover:scale-105 transition-transform duration-200 pb-5  "
             alt=""
           />
           <span className="text-white font-bold text-2xl border border-t-amber-600 w-50 rounded-xl ms-10 p-1">

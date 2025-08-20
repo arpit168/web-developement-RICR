@@ -15,10 +15,10 @@ const Contact = () => {
   };
 
   return (
-    <div className="bg-gray-800 px-15 py-5">
+    <div className="bg-gray-800 px-15 py- m-5 p-5 rounded-2xl ">
       <div class="bg-indigo-700 text-white py-6 shadow-md">
         <div class="container mx-auto px-4 text-center">
-          <h1 class="text-4xl font-bold">Get In Touch</h1>
+          <h1 class="text-4xl font-bold rounded-b-3xl">Get In Touch</h1>
           <p class="mt-2 text-lg">Java | MERN Stack | DSA Enthusiast</p>
         </div>
       </div>
@@ -78,7 +78,7 @@ const Contact = () => {
             </h2>
 
             <label for="name" class="block mb-2 font-semibold text-gray-700">
-              Name
+              Name*
             </label>
             <input
               type="text"
@@ -89,7 +89,7 @@ const Contact = () => {
             />
 
             <label for="email" class="block mb-2 font-semibold text-gray-700">
-              Email
+              Email*
             </label>
             <input
               type="email"
