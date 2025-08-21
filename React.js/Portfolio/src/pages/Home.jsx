@@ -2,7 +2,7 @@ import React from "react";
 
 const Home = () => {
   return (
-    <div>
+    <div className="p-10">
       <div class="bg-gray-800 rounded-t-lg mx-5 mt-3 shadow-md py-12 px-6">
         <div class="max-w-5xl mx-auto text-center hover:scale-110 transition-transform duration-200">
           <h1 class="text-4xl md:text-5xl font-bold text-yellow-600">

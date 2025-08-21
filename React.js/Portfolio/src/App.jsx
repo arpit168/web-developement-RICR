@@ -13,20 +13,16 @@ const App = () => {
   return (
     <>
       <BrowserRouter>
-       
         <Navbar />
-        <main className="flex h-91.5vh ">
-        
+        <main className="flex h-[85vh] ">
           <Sidebar />
-          <section className=" app w-10/14 h-screen ">
-            
+          <section className="w-10/14 overflow-y-auto">
             <Routes>
-             
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
               <Route path="/education" element={<Education />} />
               <Route path="/projects" element={<Projects />} />
-              <Route path="contact" element={<Contact />} />
+              <Route path="/contact" element={<Contact />} />
             </Routes>
           </section>
         </main>

@@ -2,9 +2,9 @@ import React from "react";
 
 const Projects = () => {
   return (
-    <div>
+    <div className="p-10">
       <div class="bg-blue-700 text-white py-6 shadow-md">
-        <div class="container mx-auto text-center hover:scale-110 transition-transform duration-200">
+        <div class="container mx-auto text-center hover:scale-103 transition-transform duration-200">
           <h1 class="text-4xl text-yellow-600 font-bold ">My Projects</h1>
           <p class="text-lg text-yellow-300  mt-2">
             Java | MERN Stack | DSA Implementations
@@ -18,7 +18,7 @@ const Projects = () => {
         </h2>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div class="bg-gray-900 shadow-lg rounded-lg p-6 hover:scale-110 transition-transform duration-200">
+          <div class="bg-gray-900 shadow-lg rounded-lg p-6 hover:scale-103 transition-transform duration-200">
             <h3 class="text-xl font-semibold text-blue-600 mb-2">
               Student Management System
             </h3>
@@ -30,12 +30,12 @@ const Projects = () => {
             <span class="inline-block bg-blue-300 text-blue-800 text-sm px-3 py-1 rounded-full">
               Java
             </span>
-            <button className="btn bg-blue-800 w-25 p-1 ms-3 rounded-xl  hover:scale-110 transition-transform duration-200 ">
+            <button className="btn bg-blue-800 w-25 p-1 ms-3 rounded-xl  hover:scale-103 transition-transform duration-200 ">
               <b>View</b>
             </button>
           </div>
 
-          <div class="bg-gray-900 shadow-lg rounded-lg p-6 hover:scale-110 transition-transform duration-200">
+          <div class="bg-gray-900 shadow-lg rounded-lg p-6 hover:scale-103 transition-transform duration-200">
             <h3 class="text-xl font-semibold text-green-600 mb-2">
               E-Commerce Web App
             </h3>
@@ -47,12 +47,12 @@ const Projects = () => {
             <span class="inline-block bg-green-300 text-green-800 text-sm px-3 py-1 rounded-full">
               MERN Stack
             </span>
-            <button className="btn bg-blue-800 w-25 p-1 ms-3 rounded-xl  hover:scale-110 transition-transform duration-200 ">
+            <button className="btn bg-blue-800 w-25 p-1 ms-3 rounded-xl  hover:scale-103 transition-transform duration-200 ">
               <b>View</b>
             </button>
           </div>
 
-          <div class="bg-gray-900 shadow-lg rounded-lg p-6 hover:scale-110 transition-transform duration-200">
+          <div class="bg-gray-900 shadow-lg rounded-lg p-6 hover:scale-103 transition-transform duration-200">
             <h3 class="text-xl font-semibold text-purple-600 mb-2">
               DSA Visualizer
             </h3>
@@ -63,12 +63,12 @@ const Projects = () => {
             <span class="inline-block bg-purple-300 text-purple-800 text-sm px-3 py-1 rounded-full">
               DSA
             </span>
-            <button className="btn bg-blue-800 w-25 p-1 ms-3 rounded-xl  hover:scale-110 transition-transform duration-200 ">
+            <button className="btn bg-blue-800 w-25 p-1 ms-3 rounded-xl  hover:scale-103 transition-transform duration-200 ">
               <b>View</b>
             </button>
           </div>
 
-          <div class="bg-gray-900 shadow-lg rounded-lg p-6 hover:scale-110 transition-transform duration-200">
+          <div class="bg-gray-900 shadow-lg rounded-lg p-6 hover:scale-103 transition-transform duration-200">
             <h3 class="text-xl font-semibold text-blue-600 mb-2">
               Banking Console App
             </h3>
@@ -80,12 +80,12 @@ const Projects = () => {
             <span class="inline-block bg-blue-300 text-blue-800 text-sm px-3 py-1 rounded-full">
               Java
             </span>
-            <button className="btn bg-blue-800 w-25 p-1 ms-3 rounded-xl  hover:scale-110 transition-transform duration-200 ">
+            <button className="btn bg-blue-800 w-25 p-1 ms-3 rounded-xl  hover:scale-103 transition-transform duration-200 ">
               <b>View</b>
             </button>
           </div>
 
-          <div class="bg-gray-900 shadow-lg rounded-lg p-6 hover:scale-110 transition-transform duration-200">
+          <div class="bg-gray-900 shadow-lg rounded-lg p-6 hover:scale-103 transition-transform duration-200">
             <h3 class="text-xl font-semibold text-green-600 mb-2">
               Blog App with JWT
             </h3>
@@ -96,12 +96,12 @@ const Projects = () => {
             <span class="inline-block bg-green-300 text-green-800 text-sm px-3 py-1 rounded-full">
               MERN Stack
             </span>
-            <button className="btn bg-blue-800 w-25 p-1 ms-3 rounded-xl  hover:scale-110 transition-transform duration-200 ">
+            <button className="btn bg-blue-800 w-25 p-1 ms-3 rounded-xl  hover:scale-103 transition-transform duration-200 ">
               <b>View</b>
             </button>
           </div>
 
-          <div class="bg-gray-900 shadow-lg rounded-lg p-6 hover:scale-110 transition-transform duration-200">
+          <div class="bg-gray-900 shadow-lg rounded-lg p-6 hover:scale-103 transition-transform duration-200">
             <h3 class="text-xl font-semibold text-purple-600 mb-2">
               DSA Problem Tracker
             </h3>
@@ -113,7 +113,7 @@ const Projects = () => {
             <span class="inline-block bg-purple-300 text-purple-800 text-sm px-3 py-1 rounded-full">
               DSA
             </span>
-            <button className="btn bg-blue-800 w-25 p-1 ms-3 rounded-xl  hover:scale-110 transition-transform duration-200 ">
+            <button className="btn bg-blue-800 w-25 p-1 ms-3 rounded-xl  hover:scale-103 transition-transform duration-200 ">
               <b>View</b>
             </button>
           </div>

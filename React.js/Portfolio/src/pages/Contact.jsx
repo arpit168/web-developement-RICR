@@ -56,16 +56,16 @@ const Contact = () => {
                 href="https://www.instagram.com/anokha_arpit/?hl=en"
                 target="_blank"
               >
-                {" "}
+               
                 <FaInstagram />
               </a>
               <a href="https://github.com/arpit168" target="_blank">
-                {" "}
+               
                 <FaGithub />
               </a>
               <a
                 href="https://www.facebook.com/arpit.gupta.170169"
-                target="_blank"
+                target="_blank" 
               >
                 <FaFacebook />
               </a>
