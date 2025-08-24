@@ -14,7 +14,7 @@ const App = () => {
     <>
       <BrowserRouter>
         <Navbar />
-        <main className="flex h-[85vh] ">
+        <main className="flex h-[85vh]  ">
           <Sidebar />
           <section className="w-10/14 overflow-y-auto">
             <Routes>

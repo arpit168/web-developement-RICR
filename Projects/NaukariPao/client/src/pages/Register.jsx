@@ -1,0 +1,190 @@
+import React, { useState } from "react";
+import { GiArchiveRegister } from "react-icons/gi";
+
+const Register = () => {
+  const [registerData, setRegisterData] = useState({
+    Fname: "",
+    number: "",
+    email: "",
+    password: "",
+    Cpassword: "",
+  });
+
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState({});
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setRegisterData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+
+  const Validate = () => {
+    let isvalid = true;
+    const err = {};
+
+    if (registerData.Fname.length < 3) {
+      err.Fname = "Name should be at least 3 characters";
+      isvalid = false;
+    }
+
+    if (registerData.number.length !== 10) {
+      err.number = "Please enter a 10-digit number";
+      isvalid = false;
+    }
+
+    if (registerData.email.includes("@ ", ".com")) {
+      err.email = "Enter a valid email like you@example.com";
+      isvalid = false;
+    }
+
+    if (registerData.password.length < 6) {
+      err.password = "Password should be at least 6 characters";
+      isvalid = false;
+    }
+
+    if (registerData.password !== registerData.Cpassword) {
+      err.Cpassword = "Passwords do not match";
+      isvalid = false;
+    }
+
+    setError(err);
+    return isvalid;
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
+    setError({});
+
+    if (!Validate()) {
+      setLoading(false);
+      return;
+    }
+
+    setTimeout(() => {
+      console.log(registerData);
+      setRegisterData({
+        Fname: "",
+        number: "",
+        email: "",
+        password: "",
+        Cpassword: "",
+      });
+      setLoading(false);
+    }, 2000);
+  };
+
+  return (
+    // ____------------------------------------------___-------------------___---------------------------___------------
+    <form
+      className="bg-[url('/sky.gif')] bg-cover bg-center h-screen"
+      onSubmit={handleSubmit}
+    >
+      <div className="flex justify-center  ">
+        <div className="bg-blue-100 opacity-100 border rounded-2xl p-10 pt-5 mt-20 w-100 ">
+          <div className="flex gap-2 text-3xl font-bold text-center text-blue-500 border-b-2 hover:text-red-700 hover:border-b-red-500">
+            <GiArchiveRegister />
+            <h1>Register Form</h1>
+          </div>
+          <br />
+          <div>
+            <label htmlFor="Fname">Full Name*: </label>
+            <br />
+            <input
+              type="text"
+              name="Fname"
+              value={registerData.Fname}
+              onChange={handleChange}
+              className="border w-3/4"
+              placeholder="Kim-e-jong"
+            />
+            {error.Fname && (
+              <p className="text-center text-red-500 text-sm">{error.Fname}</p>
+            )}
+          </div>
+          <br />
+          <div>
+            <label htmlFor="number">Phone*: </label>
+            <br />
+            <input
+              type="number"
+              name="number"
+              value={registerData.number}
+              onChange={handleChange}
+              className="border w-3/4"
+              placeholder="+91 0123456789"
+            />
+            {error.number && (
+              <p className="text-center text-red-500 text-sm">{error.number}</p>
+            )}
+          </div>
+          <br />
+          <div>
+            <label htmlFor="email">Email*: </label>
+            <br />
+            <input
+              type="email"
+              name="email"
+              value={registerData.email}
+              onChange={handleChange}
+              className="border w-3/4"
+              placeholder="you@email.com"
+            />
+            {error.email && (
+              <p className="text-center text-red-500 text-sm">{error.email}</p>
+            )}
+          </div>
+          <br />
+          <div>
+            <label htmlFor="password">Password*: </label>
+            <br />
+            <input
+              type="password"
+              name="password"
+              value={registerData.password}
+              onChange={handleChange}
+              className="border w-3/4"
+              placeholder="********"
+            />
+            {error.password && (
+              <p className="text-center text-red-500 text-sm">
+                {error.password}
+              </p>
+            )}
+          </div>
+          <br />
+          <div>
+            <label htmlFor="Cpassword">Confirm Password*: </label>
+            <br />
+            <input
+              type="password"
+              name="Cpassword"
+              value={registerData.Cpassword}
+              onChange={handleChange}
+              className="border w-3/4"
+              placeholder="********"
+            />
+            {error.Cpassword && (
+              <p className="text-center text-red-500 text-sm">
+                {error.Cpassword}
+              </p>
+            )}
+          </div>
+          <br />
+          <button
+            type="submit"
+            className="w-full border rounded-lg shadow p-2 hover:bg-blue-600 text-red-500 hover:text-white"
+          >
+            {loading ? "Registering..." : "Register"}
+          
+          </button>
+        </div>
+      </div>
+    </form>
+  );
+};
+
+export default Register;
