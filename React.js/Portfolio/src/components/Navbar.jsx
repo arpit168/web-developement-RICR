@@ -4,7 +4,7 @@ import { FaDownload } from "react-icons/fa6";
 
 const Navbar = () => {
   return (
-    <div className=" sticky  px-4 flex justify-between bg-gray-900  p-3  bg[url]">
+    <div className=" sticky top-0 px-4 flex justify-between bg-gray-900  p-3  bg[url]">
       <div className="  text-4xl font-bold  text-yellow-600  my-4 ">
         {" "}
         █▓▒▒░░░Arpit Gupta - Full stack Developer░░░▒▒▓█{" "}

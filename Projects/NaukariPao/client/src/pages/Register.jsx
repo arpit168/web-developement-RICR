@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { GiArchiveRegister } from "react-icons/gi";
+import toast from "react-hot-toast";
 
 const Register = () => {
   const [registerData, setRegisterData] = useState({
@@ -29,18 +30,36 @@ const Register = () => {
       err.Fname = "Name should be at least 3 characters";
       isvalid = false;
     }
+    if (!/^[A-Za-z ]+$/.test(registerData.Fname)) {
+      err.Fname = "Name should be at least 3 characters";
+      isvalid = false;
+    }
 
     if (registerData.number.length !== 10) {
       err.number = "Please enter a 10-digit number";
       isvalid = false;
     }
 
-    if (registerData.email.includes("@ ", ".com")) {
-      err.email = "Enter a valid email like you@example.com";
+    if (
+      !/^[A-Za-z0-9._]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/.test(registerData.email) ||registerData.email.length < 10)
+       {
+      err.email = "Enter a valid email like you@gmail.com";
       isvalid = false;
     }
 
-    if (registerData.password.length < 6) {
+    // if (
+    //   !/^[A-Za-z0-9._]+@gmail.com$/.test(registerData.email) ||
+    //   registerData.email < 10
+    // ) {
+    //   err.email = "Enter a valid email like you@gmail.com";
+    //   isvalid = false;
+    // }
+
+
+    if (
+      !/^[A-za-z0-9@#$%*&]+$/.test(registerData.password) ||
+      registerData.password < 6
+    ) {
       err.password = "Password should be at least 6 characters";
       isvalid = false;
     }
@@ -61,6 +80,7 @@ const Register = () => {
 
     if (!Validate()) {
       setLoading(false);
+      toast.error(" Please Solve the Errors");
       return;
     }
 
@@ -74,13 +94,15 @@ const Register = () => {
         Cpassword: "",
       });
       setLoading(false);
+      toast.success("  Registration Successful");
     }, 2000);
   };
+
 
   return (
     // ____------------------------------------------___-------------------___---------------------------___------------
     <form
-      className="bg-[url('/sky.gif')] bg-cover bg-center h-screen"
+      className="bg-[url('/nature.jpg')] bg-cover bg-center h-screen"
       onSubmit={handleSubmit}
     >
       <div className="flex justify-center  ">
@@ -179,7 +201,6 @@ const Register = () => {
             className="w-full border rounded-lg shadow p-2 hover:bg-blue-600 text-red-500 hover:text-white"
           >
             {loading ? "Registering..." : "Register"}
-          
           </button>
         </div>
       </div>
@@ -188,3 +209,5 @@ const Register = () => {
 };
 
 export default Register;
+
+
