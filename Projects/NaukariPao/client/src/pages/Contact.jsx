@@ -92,7 +92,7 @@ const Contact = () => {
     <form onSubmit={handleSubmit}>
          <div className="bg-gray-900   m-5  rounded-2xl " >
       <div className=" rounded-2xl px-25   ">
-        <h1 className="text-white top-100 text-7xl font-bold text-center relative ">
+        <h1 className="text-white top-100 text-9xl font-bold text-center relative ">
           Contact Us
         </h1>
         <img src={ak} className="  w-screen h-screen opacity-20" alt="" />

@@ -5,10 +5,10 @@ import pic from "../assets/naukari.webp";
 
 const Navbar = () => {
   return (
-    <div className="bg-blue-900 p-3 flex justify-between  text-white  ">
-      <div className="flex gap-5 ">
+    <div className="bg-blue-950 p-3 flex justify-between  text-white sticky top-0 ">
+      <div className="flex gap-5  ">
       <img src={pic} alt="" width={50} className="rounded-4xl  " />
-      <h1 className="text-3xl font-bold mt-2">  Naukari-Pao <br /><span className=" text-">Sapno ki naukari</span></h1>
+      <h1 className="text-3xl font-bold mt-2">  Naukari-Pao </h1>
       
       </div>
       <div className=" space-x-5 mt-2  ">
