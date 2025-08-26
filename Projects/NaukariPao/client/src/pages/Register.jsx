@@ -58,7 +58,7 @@ const Register = () => {
 
     if (
       !/^[A-za-z0-9@#$%*&]+$/.test(registerData.password) ||
-      registerData.password < 6
+      registerData.password !== 6
     ) {
       err.password = "Password should be at least 6 characters";
       isvalid = false;
