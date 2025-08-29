@@ -102,25 +102,25 @@ const Register = () => {
   return (
     // ____------------------------------------------___-------------------___---------------------------___------------
     <form
-      className="bg-[url('/nature.jpg')] bg-cover bg-center h-screen"
+      className="bg-[url('/bgi.jpg')] bg-cover bg-center h-165"
       onSubmit={handleSubmit}
     >
       <div className="flex justify-center  ">
-        <div className="bg-blue-100 opacity-100 border rounded-2xl p-10 pt-5 mt-20 w-100 ">
+        <div className="bg-gray-950 opacity-80 border rounded-2xl p-10 pt-5 mt-20 w-100 pb-5 ">
           <div className="flex gap-2 text-3xl font-bold text-center text-blue-500 border-b-2 hover:text-red-700 hover:border-b-red-500">
             <GiArchiveRegister />
             <h1>Register Form</h1>
           </div>
           <br />
           <div>
-            <label htmlFor="Fname">Full Name*: </label>
+            <label className="text-white" htmlFor="Fname">Full Name*: </label>
             <br />
             <input
               type="text"
               name="Fname"
               value={registerData.Fname}
               onChange={handleChange}
-              className="border w-3/4"
+              className="border w-3/4 text-white rounded"
               placeholder="Kim-e-jong"
             />
             {error.Fname && (
@@ -129,14 +129,14 @@ const Register = () => {
           </div>
           <br />
           <div>
-            <label htmlFor="number">Phone*: </label>
+            <label className="text-white" htmlFor="number">Phone*: </label>
             <br />
             <input
               type="number"
               name="number"
               value={registerData.number}
               onChange={handleChange}
-              className="border w-3/4"
+              className="border w-3/4 text-white rounded"
               placeholder="+91 0123456789"
             />
             {error.number && (
@@ -145,14 +145,14 @@ const Register = () => {
           </div>
           <br />
           <div>
-            <label htmlFor="email">Email*: </label>
+            <label className="text-white" htmlFor="email">Email*: </label>
             <br />
             <input
               type="email"
               name="email"
               value={registerData.email}
               onChange={handleChange}
-              className="border w-3/4"
+              className="border w-3/4 text-white rounded"
               placeholder="you@email.com"
             />
             {error.email && (
@@ -161,14 +161,14 @@ const Register = () => {
           </div>
           <br />
           <div>
-            <label htmlFor="password">Password*: </label>
+            <label className="text-white" htmlFor="password">Password*: </label>
             <br />
             <input
               type="password"
               name="password"
               value={registerData.password}
               onChange={handleChange}
-              className="border w-3/4"
+              className="border w-3/4 text-white rounded"
               placeholder="********"
             />
             {error.password && (
@@ -179,14 +179,14 @@ const Register = () => {
           </div>
           <br />
           <div>
-            <label htmlFor="Cpassword">Confirm Password*: </label>
+            <label className="text-white" htmlFor="Cpassword">Confirm Password*: </label>
             <br />
             <input
               type="password"
               name="Cpassword"
               value={registerData.Cpassword}
               onChange={handleChange}
-              className="border w-3/4"
+              className="border w-3/4 text-white rounded"
               placeholder="********"
             />
             {error.Cpassword && (
@@ -198,7 +198,7 @@ const Register = () => {
           <br />
           <button
             type="submit"
-            className="w-full border rounded-lg shadow p-2 hover:bg-blue-600 text-red-500 hover:text-white"
+            className="w-full border rounded-lg shadow p-2 hover:bg-blue-800 text-red-500 hover:text-white"
           >
             {loading ? "Registering..." : "Register"}
           </button>
