@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import { GiArchiveRegister } from "react-icons/gi";
 import toast from "react-hot-toast";
+import { MdDriveFileRenameOutline } from "react-icons/md";
+import { FaPhoneVolume } from "react-icons/fa6";
+import { FaEnvelope } from "react-icons/fa6";
+import { FaLock } from "react-icons/fa6";
 
 const Register = () => {
   const [registerData, setRegisterData] = useState({
@@ -41,8 +45,11 @@ const Register = () => {
     }
 
     if (
-      !/^[A-Za-z0-9._]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/.test(registerData.email) ||registerData.email.length < 10)
-       {
+      !/^[A-Za-z0-9._]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/.test(
+        registerData.email
+      ) ||
+      registerData.email.length < 10
+    ) {
       err.email = "Enter a valid email like you@gmail.com";
       isvalid = false;
     }
@@ -54,7 +61,6 @@ const Register = () => {
     //   err.email = "Enter a valid email like you@gmail.com";
     //   isvalid = false;
     // }
-
 
     if (
       !/^[A-za-z0-9@#$%*&]+$/.test(registerData.password) ||
@@ -98,29 +104,31 @@ const Register = () => {
     }, 2000);
   };
 
-
   return (
     // ____------------------------------------------___-------------------___---------------------------___------------
     <form
-      className="bg-[url('/bgi.jpg')] bg-cover bg-center h-165"
+      className="bg-[url('/bgi.jpg')] bg-cover bg-center h-163"
       onSubmit={handleSubmit}
     >
       <div className="flex justify-center  ">
-        <div className="bg-gray-950 opacity-80 border rounded-2xl p-10 pt-5 mt-20 w-100 pb-5 ">
-          <div className="flex gap-2 text-3xl font-bold text-center text-blue-500 border-b-2 hover:text-red-700 hover:border-b-red-500">
-            <GiArchiveRegister />
+        <div className="bg-gray-800  border rounded-xl p-10 mt-2 w-125 h-auto ">
+          <div className="flex gap-2  text-3xl font-bold text-center text-blue-500 border-b-2 hover:text-red-700 hover:border-b-red-500">
+            <GiArchiveRegister className="mt-2" />
             <h1>Register Form</h1>
           </div>
           <br />
           <div>
-            <label className="text-white" htmlFor="Fname">Full Name*: </label>
-            <br />
+            <label className="text-gray-300 flex" htmlFor="Fname">
+              <MdDriveFileRenameOutline className="mt-1 mr-2 text-xl" />
+              Full Name :-{" "}
+            </label>
+
             <input
               type="text"
               name="Fname"
               value={registerData.Fname}
               onChange={handleChange}
-              className="border w-3/4 text-white rounded"
+              className="border w-3/4 rounded mt-2 text-white"
               placeholder="Kim-e-jong"
             />
             {error.Fname && (
@@ -129,14 +137,17 @@ const Register = () => {
           </div>
           <br />
           <div>
-            <label className="text-white" htmlFor="number">Phone*: </label>
-            <br />
+            <label className="text-gray-300 flex" htmlFor="number">
+              <FaPhoneVolume className="mt-1 mr-2 text-xl" />
+              Phone :-{" "}
+            </label>
+
             <input
               type="number"
               name="number"
               value={registerData.number}
               onChange={handleChange}
-              className="border w-3/4 text-white rounded"
+              className="border w-3/4 rounded mt-2 text-white"
               placeholder="+91 0123456789"
             />
             {error.number && (
@@ -145,14 +156,17 @@ const Register = () => {
           </div>
           <br />
           <div>
-            <label className="text-white" htmlFor="email">Email*: </label>
-            <br />
+            <label className="text-gray-300 flex" htmlFor="email">
+              <FaEnvelope className="mt-1 mr-2 text-xl" />
+              Email :-{" "}
+            </label>
+
             <input
               type="email"
               name="email"
               value={registerData.email}
               onChange={handleChange}
-              className="border w-3/4 text-white rounded"
+              className="border w-3/4 rounded mt-2 text-white"
               placeholder="you@email.com"
             />
             {error.email && (
@@ -161,14 +175,17 @@ const Register = () => {
           </div>
           <br />
           <div>
-            <label className="text-white" htmlFor="password">Password*: </label>
-            <br />
+            <label className="text-gray-300 flex" htmlFor="password">
+              <FaLock className="mt-1 mr-2 text-xl" />
+              Password :-{" "}
+            </label>
+
             <input
               type="password"
               name="password"
               value={registerData.password}
               onChange={handleChange}
-              className="border w-3/4 text-white rounded"
+              className="border w-3/4 rounded mt-2 text-white"
               placeholder="********"
             />
             {error.password && (
@@ -179,14 +196,17 @@ const Register = () => {
           </div>
           <br />
           <div>
-            <label className="text-white" htmlFor="Cpassword">Confirm Password*: </label>
-            <br />
+            <label className="text-gray-300 flex" htmlFor="Cpassword">
+              <FaLock className="mt-1 mr-2 text-xl" />
+              Confirm Password :-{" "}
+            </label>
+
             <input
               type="password"
               name="Cpassword"
               value={registerData.Cpassword}
               onChange={handleChange}
-              className="border w-3/4 text-white rounded"
+              className="border w-3/4 rounded mt-2 text-white"
               placeholder="********"
             />
             {error.Cpassword && (
@@ -198,7 +218,7 @@ const Register = () => {
           <br />
           <button
             type="submit"
-            className="w-full border rounded-lg shadow p-2 hover:bg-blue-800 text-red-500 hover:text-white"
+            className="w-full border rounded-lg shadow p-2 hover:bg-blue-800 bg-blue-600 text-red-200 hover:text-white"
           >
             {loading ? "Registering..." : "Register"}
           </button>
@@ -209,5 +229,3 @@ const Register = () => {
 };
 
 export default Register;
-
-

@@ -7,10 +7,10 @@ import { GrUserWorker } from "react-icons/gr";
 import img1 from "../assets/view.jpg";
 import img2 from "../assets/view1.jpg";
 import { FaChevronRight } from "react-icons/fa";
+import { BsFillSendExclamationFill } from "react-icons/bs";
 
 const About = () => {
   return (
-  
     <div className="bg-gray-900  m-5 rounded-2xl ">
       <div className=" rounded-2xl px-25   ">
         <h1 className="text-white top-125 text-9xl font-bold text-center relative ">
@@ -58,6 +58,7 @@ const About = () => {
             <img src={ab} className="w-700 h-150 object-cover" alt="" />
           </div>
         </div>
+         </div>
 
         {/* ____________________________________________________________________ */}
         <div className=" bg-cover bg-center text-center h-screen w-370 mt-10 text-white pt-30 bg-[url('/blue.jpg')] bg-no-repeat object  ">
@@ -102,7 +103,7 @@ const About = () => {
             </div>
           </div>
         </div>
-      </div>
+     
 
       {/* ______________________________________________________________________________________ */}
 
@@ -129,7 +130,7 @@ const About = () => {
       </div>
       {/* ____________________________________________________________________________________ */}
 
-      <div className=" h-100 pt-30     opacity-50  text-center  bg-center bg-cover rounded-2xl bg-[url('./inter.avif')]   my-5">
+      <div className=" h-100 pt-30  opacity-50  text-center  bg-center bg-cover rounded-2xl bg-[url('./inter.avif')]   my-5">
         <h3 className="text-2xl pb-10  text-red-600">
           FEATURED TOURS PACKAGES
         </h3>
@@ -182,10 +183,77 @@ const About = () => {
         </div>
       </div>
       {/* _________________________________________________________ */}
-    </div>
 
-    
-  
+      <footer className="bg-black py-10 px-30">
+        <form>
+          <div className="text-white flex gap-20">
+            <div>
+              <h1 className="font-bold text-2xl hover:text-red-600 hover:scale-110 transition-transform duration-200">
+                ABOUT US
+              </h1>
+              <p className="mt-2 text-gray-300">
+                Heaven’s blessings don’t <br />
+                miss even the smallest days <br />
+                — everything grows in <br /> its time, so look and see.
+              </p>
+            </div>
+
+            <div>
+              <h1 className="font-bold text-2xl hover:text-red-600 hover:scale-110 transition-transform duration-200">
+                CONTACT INFO
+              </h1>
+              <p className="mt-2 text-gray-300">
+                Address : Fateh road churhat Sidhi (Madhya Pradesh).
+                <br />
+                <span className="hover:text-red-600">
+                  Phone : +91 9516****42
+                </span>
+                <br />
+                <span className="hover:text-red-600">
+                  Email : arpit****@gmail.com
+                </span>
+              </p>
+            </div>
+
+            <div>
+              <h1 className="font-bold text-2xl hover:text-red-600 hover:scale-110 transition-transform duration-200">
+                IMPORTANT LINK
+              </h1>
+              <ul className="mt-2 space-y-1">
+                <li className="hover:text-red-600">View Project</li>
+                <li className="hover:text-red-600">Contact Us</li>
+                <li className="hover:text-red-600">Testimonial</li>
+                <li className="hover:text-red-600">Properties</li>
+                <li className="hover:text-red-600">Support</li>
+              </ul>
+            </div>
+
+            <div>
+              <h1 className="font-bold text-2xl hover:text-red-600 hover:scale-110 transition-transform duration-200">
+                NEW SELLER
+              </h1>
+              <p className="mt-2 text-gray-300">
+                Heaven’s blessings don’t miss <br /> even the smallest days.
+                appear creeping.
+              </p>
+
+              <div className="mt-4 flex items-center space-x-2">
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="you@email.com"
+                  required
+                  className="p-2 rounded w-1/2 bg-white text-black"
+                />
+                <button className="bg-red-500 hover:bg-red-600 text-white px-3 py-2 rounded text-lg">
+                  <BsFillSendExclamationFill />
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </footer>
+    </div>
   );
 };
 

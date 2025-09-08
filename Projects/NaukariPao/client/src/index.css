@@ -1,9 +1,9 @@
 @import "tailwindcss";
 
-/* body{
+body{
     background-color: black;
-} */
+}
 
 ::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Opera */
+  display: none; 
 }
