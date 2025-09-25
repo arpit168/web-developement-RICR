@@ -7,7 +7,7 @@ import morgan from "morgan";
 import AuthRouter from "./src/routes/authRouter.js";
 import UserRouter from "./src/routes/userRouter.js";
 import connectDB from "./src/config/db.js";
-
+z
 const app = express();
 
 app.use(cors());
