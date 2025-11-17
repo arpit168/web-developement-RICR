@@ -461,6 +461,10 @@ font-weight: 700;
   padding-top: 100px;
   box-shadow:  black;
 }
+
+.boxzep{
+  width: 1525px;
+}
 .perfect{
   display: flex;
   justify-content: space-around;
@@ -468,8 +472,7 @@ font-weight: 700;
   height: 400px;
   margin-left: 150px;
   background-color: white;
-  
-  
+
 }
 
 .crispy{
@@ -489,7 +492,7 @@ font-weight: 700;
   margin-top: 100px;
   text-align: left;
   margin-left: 50px;
-  
+ 
 
 }
 .bit{
@@ -555,7 +558,7 @@ font-weight: 700;
 }
 /* ______________________________________________ */
 .box7{
-  width: 1425px;
+  width: 1375px;
   height: 800px;
   background-color: rgb(18, 16, 16);
   color: white;
