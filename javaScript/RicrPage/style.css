@@ -1,0 +1,38 @@
+.name{
+    width: 30rem;
+    padding: 10px;
+    
+}
+.email{
+    width: 40rem;
+    padding: 10px;
+}
+
+.qualification{
+    width: 20rem;
+    padding: 10px;
+}
+.edu{
+      width: 65rem;
+    padding: 10px;
+}
+.year{
+    width: 30rem;
+    padding: 10px;
+}
+.branch{
+    width: 30rem;
+    padding: 10px;
+}
+.info{
+    width: 30rem;
+    padding: 10px;
+}
+.NameFriend{
+     width: 30rem;
+    padding: 10px;
+
+}
+.footer{
+    background-color: #0b5396;
+}
