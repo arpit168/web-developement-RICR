@@ -1,0 +1,46 @@
+
+    :root{
+      --bg:#0f1724; --card:#0b1220; --accent:#06b6d4; --muted:#94a3b8; --text:#e6eef6;
+      --glass: rgba(255,255,255,0.04);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;background:linear-gradient(180deg,#071124 0%, #0b1830 100%);color:var(--text);-webkit-font-smoothing:antialiased}
+    .container{max-width:900px;margin:36px auto;padding:28px;border-radius:14px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));box-shadow:0 10px 30px rgba(2,6,23,0.6);display:grid;grid-template-columns:1fr 320px;gap:28px}
+    header{display:flex;align-items:center;gap:16px}
+    .avatar{width:88px;height:88px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:32px;color:#021226}
+    h1{margin:0;font-size:24px;letter-spacing:0.2px}
+    .role{color:var(--muted);margin-top:4px;font-size:14px}
+
+    /* left column */
+    .main{padding:6px 0}
+    .section{margin-bottom:18px}
+    .section h3{margin:0 0 10px 0;font-size:14px;color:var(--accent);text-transform:uppercase;letter-spacing:1px}
+    .summary{color:var(--text);line-height:1.5;font-size:14px}
+    .job{background:var(--glass);padding:12px;border-radius:10px;margin-bottom:10px}
+    .job .title{display:flex;justify-content:space-between;gap:8px}
+    .job h4{margin:0;font-size:15px}
+    .job p{margin:8px 0 0 0;color:var(--muted);font-size:13px}
+    .bullets{margin:8px 0 0 0;padding-left:18px;color:var(--text);font-size:13px}
+    .bullets li{margin-bottom:6px}
+
+    /* right column */
+    aside{padding:12px;background:rgba(255,255,255,0.02);border-radius:12px;height:100%}
+    .contact p{margin:6px 0;color:var(--text);font-size:14px}
+    .meta{display:flex;flex-direction:column;gap:8px}
+    .skill{display:flex;flex-wrap:wrap;gap:8px}
+    .chip{background:rgba(255,255,255,0.03);padding:8px 10px;border-radius:999px;font-size:13px;color:var(--text)}
+    .progress{height:8px;background:rgba(255,255,255,0.04);border-radius:999px;overflow:hidden}
+    .progress > span{display:block;height:100%;background:linear-gradient(90deg,var(--accent),#7c3aed)}
+
+    /* projects / education */
+    .project{padding:10px;border-radius:8px;background:rgba(255,255,255,0.01);margin-bottom:10px}
+    .project a{color:var(--accent);text-decoration:none;font-weight:600}
+
+    /* footer */
+    .controls{display:flex;gap:10px;align-items:center}
+    .btn{padding:8px 12px;border-radius:8px;background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--text);cursor:pointer}
+
+    /* responsive */
+    @media (max-width:880px){.container{grid-template-columns:1fr; padding:18px} aside{order:2} .main{order:1}}
+    @media print{body{background:white;color:black} .container{box-shadow:none;background:white} .avatar{display:none} .btn{display:none}}
