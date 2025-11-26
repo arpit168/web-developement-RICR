@@ -13,8 +13,6 @@ function Input(char) {
     document.getElementById("display").value = "";
   } else {
     document.getElementById("display").value =
-
-    document.getElementById("display").value + char;
+      document.getElementById("display").value + char;
   }
 }
-  
