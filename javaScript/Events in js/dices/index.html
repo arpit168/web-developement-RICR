@@ -25,10 +25,11 @@
         class="w-50 text-center d-grid justify-content-center mt-5 px-5 py-4 border border-5 rounded-2 m-5 shadow"
       >
         <h1 class="fw-normal">Player 1</h1>
-        <img src="dices.jpg" alt="" width="100px" class="ms-3" id="dice1" />
+        <img src="./img/dices6.jpg" alt="" width="100px" class="ms-3" id="dice1" />
         <button
-          class="d-block bg-primary text-light py-1 px-4 rounded-2 border-0"
-          onclick="roll1()"
+        type="button"
+          class=" btn btn-primary "
+          onclick="p1play()" id="roll1"
           disabled
         >
           Roll Dice
@@ -39,11 +40,12 @@
         class="w-50 text-center d-grid justify-content-center mt-5 px-5 py-4 border border-5 rounded-2 m-5 shadow"
       >
         <h1 class="fw-normal">Player 2</h1>
-        <img src="dices.jpg" alt="" width="100px" class="ms-3" id="dice2" />
+        <img src="./img/dices6.jpg" alt="" width="100px" class="ms-3" id="dice2" />
         <button
-          class="d-block bg-primary text-light py-1 px-4 rounded-2 border-0"
-          onclick="roll2()"
-          disabled
+        type="button"
+          class=" btn btn-primary  "
+          onclick="p2play()" id="roll2" disabled
+         
         >
           Roll Dice
         </button>
@@ -54,24 +56,26 @@
       <div class="d-flex justify-content-around">
         <div>
           <h4>Player 1</h4>
-          <h4 id="score1">0</h4>
+          <label for="p1score" id="p1sc">0</label>
         </div>
 
         <div>
           <h4>Player 2</h4>
-          <h4 id="score2">0</h4>
+          <label for="p2score" id="p2sc">0</label>
         </div>
       </div>
       <div>
         <button
-          class="bg-success text-light px-2 py-2 border-0 rounded-2 m-2"
+        type="button"
+          class="btn btn-success " 
           onclick="start()"
           id="start"
         >
           Start Game
         </button>
         <button
-          class="bg-danger text-light px-2 py-2 border-0 rounded-2 m-2"
+        type="button"
+          class="btn btn-danger "
           onclick="restart()"
           id="restart"
           disabled
