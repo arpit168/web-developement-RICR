@@ -1,8 +1,8 @@
 import React from "react";
-import { Route, Routes, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
-import collection from "./pages/collection";
-import about from "./pages/about";
+import Collection from "./pages/Collection";
+import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Product from "./pages/Product";
 import Cart from "./pages/Cart";
@@ -17,12 +17,12 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/collection" element={<Collection />} />
-        <Route path="/about" element={<about />} />
+        <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/product/:productId" element={<Product />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/olace-order" element={<PlaceOrder />} />
+        <Route path="/place-order" element={<PlaceOrder />} />
       </Routes>
     </div>
   );
