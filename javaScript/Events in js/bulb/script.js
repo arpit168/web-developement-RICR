@@ -19,14 +19,14 @@ function changeBulbColor(color) {
   document.getElementById("bulb").style.backgroundColor = color;
 }
 
-function SB_Control() {
-  const btn = document.getElementById("SB_btn");
-  if (btn.innerText === "On") {
-    document.getElementById("SB_btn").innerText = "Off";
-    document.getElementById("smartBulb").classList.add("on");
-  } else document.getElementById("SB_btn").innerText = "On";
-  document.getElementById("smartBulb").classList.remove("on");
-}
+// function SB_Control() {
+//   const btn = document.getElementById("SB_btn");
+//   if (btn.innerText === "On") {
+//     document.getElementById("SB_btn").innerText = "Off";
+//     document.getElementById("smartBulb").classList.add("on");
+//   } else document.getElementById("SB_btn").innerText = "On";
+//   document.getElementById("smartBulb").classList.remove("on");
+// }
 
 // function SB_Control2() {
 //   document.getElementById('smartBulb').classList.toogle("on")

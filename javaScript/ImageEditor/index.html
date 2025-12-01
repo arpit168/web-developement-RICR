@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Editor</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div
+        class="container-fluid bg-primary px-3 py-2 text-center display-6 fw-bold text-light"
+      >
+        Image Editor
+      </div>
+    </header>
+    <div class="mx-3 border border-primary d-flex" id="content">
+      <div
+        class="box1 border border-danger w-25 m-2 overflow-hidden overflow-scroll"
+      >
+        <div>
+          <!-- brightness -->
+          <div
+            class="d-flex flex-column align-items-center border rounded shadow m-3"
+          >
+            <input
+              type="range"
+              name="brightness"
+              id="brightness"
+              min="0"
+              max="100"
+              value="50"
+              onchange="changeBrightness()"
+              class="form-range px-3"
+            />
+            <div class="d-flex justify-content-between w-100 px-3">
+              <span>0</span>
+              <label for="brightness" class="fs-5">Brightness</label>
+              <span>100</span>
+            </div>
+          </div>
+          <!-- constrast -->
+          <div
+            class="d-flex flex-column align-items-center border rounded shadow m-3"
+          >
+            <input
+              type="range"
+              name="contrast"
+              id="contrast"
+              min="0"
+              max="100"
+              value="50"
+              onchange="changeContrast()"
+              class="form-range px-3"
+            />
+            <div class="d-flex justify-content-between w-100 px-3">
+              <span>0</span>
+              <label for="contrast" class="fs-5">Contrast</label>
+              <span>100</span>
+            </div>
+          </div>
+
+          <!-- grayscale -->
+          <div
+            class="d-flex flex-column align-items-center border rounded shadow m-3"
+          >
+            <input
+              type="range"
+              name="grayscale"
+              id="grayscale"
+              min="0"
+              max="100"
+              value="0"
+              onchange="changeGrayscale()"
+              class="form-range px-3"
+            />
+            <div class="d-flex justify-content-between w-100 px-3">
+              <span>0</span>
+              <label for="grayscale" class="fs-5">Grayscale</label>
+              <span>100</span>
+            </div>
+          </div>
+          <!-- sepia -->
+          <div
+            class="d-flex flex-column align-items-center border rounded shadow m-3"
+          >
+            <input
+              type="range"
+              name="sepia"
+              id="sepia"
+              min="0"
+              max="100"
+              value="0"
+              onchange="changeSepia()"
+              class="form-range px-3"
+            />
+            <div class="d-flex justify-content-between w-100 px-3">
+              <span>0</span>
+              <label for="sepia" class="fs-5">Sepia</label>
+              <span>100</span>
+            </div>
+          </div>
+        </div>
+        <!-- invert -->
+        <div
+          class="d-flex flex-column align-items-center border rounded shadow m-3"
+        >
+          <input
+            type="range"
+            name="invert"
+            id="invert"
+            min="0"
+            max="100"
+            value="0"
+            onchange="changeInvert()"
+            class="form-range px-3"
+          />
+          <div class="d-flex justify-content-between w-100 px-3">
+            <span>0</span>
+            <label for="invert" class="fs-5">Invert</label>
+            <span>100 </span>
+          </div>
+        </div>
+        <div class="d-flex flex-column gap-3 my-5 mx-3">
+          <button class="btn btn-outline-warning" onclick="reset()">
+            <i class="bi bi-arrow-clockwise"></i> Reset
+          </button>
+          <button class="btn btn-outline-success" onclick="download()">
+            <i class="bi bi-download"></i> Download
+          </button>
+          <label
+            class="btn btn-outline-primary"
+            for="upload"
+            id="uploadAnotherLabel"
+          >
+            <i class="bi bi-camera"></i> Upload Another Image
+          </label>
+        </div>
+      </div>
+
+      <!-- Image box -->
+      <div
+        class="box2 border border-success w-75 d-flex justify-content-center align-items-center m-2"
+        id="workspace"
+      >
+        <img
+          src=""
+          alt=""
+          id="image"
+          class="border object-fit-contain rounded-3"
+        />
+        <label class="btn btn-outline-primary" for="upload" id="uploadLabel"
+          ><i class="bi bi-camera"></i> Upload Image</label
+        >
+        <input
+          type="file"
+          name="upload"
+          id="upload"
+          class="d-none"
+          onchange="uploadImage()"
+          accept="image/*"
+        />
+      </div>
+    </div>
+
+    <!-- Bootstrap script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
