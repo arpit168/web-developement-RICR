@@ -1,17 +1,18 @@
-#bulb{
+ #bulb{
     padding: 50px;
     border: 1px solid black;
     border-radius: 50%;
     width:fit-content ;
 
 }
-button{
+/* button{
     margin: 10px;
     border-radius: 100px;
     padding: 5px;
 }
+    */ 
 
-#smartbulb{
+#rainbow{
     height: 100px;
     width: 100px;
     display: flex;
@@ -19,5 +20,40 @@ button{
     align-items: center;
     border: 1px solid #000;
     border-radius: 50%;
+} 
+
+
+#C1{
+    background-color: red;
+    border-radius: 50%;
+
+    
 }
+#C2{
+    background-color: blue;
+}
+#C3{
+    background-color: green;
+}
+#C4{
+    background-color: yellow;
+}
+#C5{
+    background-color: violet;
+}
+#C6{
+    background-color: orange;
+}
+#C7{
+    background-color: pink;
+}
+
+#colorpalet{
+    display: flex;
+    gap: 5px;
+    border-radius: 50%;
+}
+
+
+
 

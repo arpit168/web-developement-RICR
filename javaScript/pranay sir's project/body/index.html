@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Body Parts Name</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <div class="container pt-5 bg-secondary">
+      <div class="d-grid justify-content-center ">
+        <div class="text-center">
+          <h1 class="text-white fw-bolder"><span class="text-danger ">B</span>ody <span class="text-danger ">P</span>arts <span class="text-danger ">N</span>ame</h1>
+          <select name="body" id="body" onclick="partName()" class="w-50 p-2">
+            <option>-Select-</option>
+            <option value="scalp">Scalp</option>
+            <option value="foreHead">ForeHead</option>
+            <option value="temple">Temple</option>
+            <option value="eyebrow">Eyebrow</option>
+            <option value="eye">Eye</option>
+            <option value="ear">Ear</option>
+            <option value="nose">Nose</option>
+            <option value="cheek">Cheek</option>
+            <option value="mouth">Mouth</option>
+            <option value="lips">Lips</option>
+            <option value="face">Face</option>
+            <option value="neck">Neck</option>
+            <option value="throat">Throat</option>
+            <option value="shoulders">Shoulders</option>
+            <option value="chest">Chest</option>
+            <option value="Back">Back</option>
+            <option value="spine">Spine</option>
+            <option value="elbow">Elbow</option>
+            <option value="wrist">Wrist</option>
+            <option value="hand">Hand</option>
+            <option value="palm">Palm</option>
+            <option value="Fingers">Fingers</option>
+            <option value="thumb">Thumb</option>
+            <option value="Nail">Nails</option>
+            <option value="stomach">Stomach</option>
+            <option value="hips">hips</option>
+            <option value="buttocks">Buttocks</option>
+            <option value="thigh">Thigh</option>
+            <option value="knee">Knee</option>
+            <option value="leg">Leg</option>
+            <option value="ankel">Ankel</option>
+            <option value="heel">Heel</option>
+            <option value="foot">Foot</option>
+            <option value="sole">Sole</option>
+            <option value="Toes">Toes</option>
+          </select>
+          <button
+            class="btn btn-primary fw-bolder py-2 px-4 text-light"
+            onclick="reload()"
+          >
+            Clear
+        </button>
+        </div>
+        <img src="Complete body parts.jpg" id="InputBody"  class="m-4 rounded" alt="">
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,23 +1,23 @@
-function Onred() {
-  document.getElementById("bulb").style.backgroundColor = "red";
-}
-function Onblue() {
-  document.getElementById("bulb").style.backgroundColor = "blue";
-}
-function Ongreen() {
-  document.getElementById("bulb").style.backgroundColor = "green";
-}
-function Off() {
-  document.getElementById("bulb").style.backgroundColor = "white";
-}
+// function Onred() {
+//   document.getElementById("bulb").style.backgroundColor = "red";
+// }
+// function Onblue() {
+//   document.getElementById("bulb").style.backgroundColor = "blue";
+// }
+// function Ongreen() {
+//   document.getElementById("bulb").style.backgroundColor = "green";
+// }
+// function Off() {
+//   document.getElementById("bulb").style.backgroundColor = "white";
+// }
 
-const userColor = document.getElementById("color");
+// const userColor = document.getElementById("color");
 
-userColor.addEventListener("change", () => changeBulbColor(userColor.value));
+// userColor.addEventListener("change", () => changeBulbColor(userColor.value));
 
-function changeBulbColor(color) {
-  document.getElementById("bulb").style.backgroundColor = color;
-}
+// function changeBulbColor(color) {
+//   document.getElementById("bulb").style.backgroundColor = color;
+// }
 
 // function SB_Control() {
 //   const btn = document.getElementById("SB_btn");
@@ -31,3 +31,7 @@ function changeBulbColor(color) {
 // function SB_Control2() {
 //   document.getElementById('smartBulb').classList.toogle("on")
 // }
+
+document.getElementById("C1").addEventListener("mouseenter",()=>{
+  fillColour("Red")
+})    

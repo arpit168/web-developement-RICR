@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online-Course</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header
+      class="header d-flex justify-content-between pt-3 position-sticky w-100 top-0 z-3"
+    >
+      <h1 class="text-light fw-bolder">Learn Coding</h1>
+      <nav>
+        <ul class="me-5 d-flex gap-3 list-unstyled justify-content-center">
+          <li class="border border-1 px-2 py-1 bg-info-subtle rounded">
+            <a href="/">Home</a>
+          </li>
+          <li class="border border-1 px-2 py-1 bg-info-subtle rounded">
+            <a href="/courses">Courses</a>
+          </li>
+          <li class="border border-1 px-2 py-1 bg-info-subtle rounded">
+            <a href="/about">About</a>
+          </li>
+          <li class="border border-1 px-2 py-1 bg-info-subtle rounded">
+            <a href="/Contact">Contact</a>
+          </li>
+          <span class="d-flex gap-3 ms-5 ps-5">
+            <li class="border border-1 px-2 py-1 bg-danger-subtle rounded">
+              <a href="/login">Login</a>
+            </li>
+            <li class="border border-1 px-2 py-1 bg-primary-subtle rounded">
+              <a href="/register">Register</a>
+            </li>
+          </span>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="home mx-5 bg-success-subtle p-2">
+        <div class="text-danger-emphasis">
+          <h1 class="text-center mt-5">“Learn Coding with Us"</h1>
+        </div>
+        <div class="d-flex justify-content-around mb-5">
+          <div
+            class="text-black w-25 mt-5 border p-1 border-1 border-black bg-info-subtle rounded-2 shadow"
+          >
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat
+            voluptate provident officia, inventore nobis dolorum! Libero eius
+            quisquam officiis voluptatum quaerat amet molestiae tempore aperiam
+            reprehenderit tenetur dignissimos accusantium vel, omnis
+            repellendus! Sed, adipisci vel maxime tempore, voluptates sint
+            inventore excepturi dignissimos atque, debitis possimus quidem
+            consequatur a ratione est?
+          </div>
+
+          <div
+            class="text-black w-25 mt-5 border p-1 border-1 border-black bg-info-subtle rounded-2 shadow"
+          >
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat
+            voluptate provident officia, inventore nobis dolorum! Libero eius
+            quisquam officiis voluptatum quaerat amet molestiae tempore aperiam
+            reprehenderit tenetur dignissimos accusantium vel, omnis
+            repellendus! Sed, adipisci vel maxime tempore, voluptates sint
+            inventore excepturi dignissimos atque, debitis possimus quidem
+            consequatur a ratione est?
+          </div>
+          <div
+            class="text-black w-25 mt-5 border p-1 border-1 border-black bg-info-subtle rounded-2 shadow"
+          >
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat
+            voluptate provident officia, inventore nobis dolorum! Libero eius
+            quisquam officiis voluptatum quaerat amet molestiae tempore aperiam
+            reprehenderit tenetur dignissimos accusantium vel, omnis
+            repellendus! Sed, adipisci vel maxime tempore, voluptates sint
+            inventore excepturi dignissimos atque, debitis possimus quidem
+            consequatur a ratione est?
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Courses -->
+    <div class="courses m-5 bg-success-subtle p-2">
+      <h2 class="text-center mb-4 text-danger-emphasis">Our Courses</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100">
+            <div class="p-2">
+              <h5 class="card-title">HTML & CSS Basics</h5>
+              <p class="card-text"><span>Level:</span> Beginner</p>
+              <p class="card-text"><span>Price:</span> 2999/-</p>
+              <a href="/register" class="btn btn-primary">Enroll</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">JavaScript Mastery</h5>
+              <p class="card-text"><span>Level:</span> Intermediate</p>
+              <p class="card-text"><span>Price:</span> ₹4999/-</p>
+              <a href="/register" class="btn btn-primary">Enroll</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">React Advanced</h5>
+              <p class="card-text"><span>Level:</span> Advanced</p>
+              <p class="card-text"><span>Price:</span> ₹7999/-</p>
+              <a href="/register" class="btn btn-primary">Enroll</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Enroll interaction -->
+    <div class="enroll-interaction">
+        <h2 class="text-center mb-4 text-danger-emphasis">Enroll in a Course</h2>
+        <form id="enrollForm" class="w-50 mx-auto">
+            <div class="mb-3">
+                <label for="studentName" class="form-label">Name <sup class="text-danger">*</sup></label>
+                <input type="text" class="form-control" id="studentName" placeholder="Enter your name" required />
+            </div>
+            <div class="mb-3">
+                <label for="college" class="form-label">College <sup class="text-danger">*</sup></label>
+                <input type="text" class="form-control" id="college" placeholder="Enter your college" required />
+            </div>
+            <div class="mb-3">
+                <label for="branch" class="form-label">Branch <sup class="text-danger">*</sup></label>
+                <input type="text" class="form-control" id="branch" placeholder="Enter your branch" required />
+            </div>
+            <div class="mb-3">
+                <label for="semester" class="form-label">Semester <sup class="text-danger">*</sup></label>
+                <input type="text" class="form-control" id="semester" placeholder="Enter your semester" required />
+            </div>
+            <div class="mb-3">
+                <label for="phone" class="form-label">Phone Number <sup class="text-danger">*</sup></label>
+                <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required />
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email <sup class="text-danger">*</sup></label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email" required />
+            </div>
+            <div class="mb-3">
+                <label for="gender" class="form-label">Gender <sup class="text-danger">*</sup></label>
+                <select class="form-select" id="gender" required>
+                    <option value="">Select your gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="courseName" class="form-label">Course Name <sup class="text-danger">*</sup></label>
+                <input type="text" class="form-control" id="courseName" placeholder="Enter course name" required />
+            </div>
+            <button type="submit" class="btn btn-success w-100">Enroll</button>
+        </form>
+    </div>
+
+    <!-- contact us -->
+    <div>
+      <section class="contact m-5 bg-success-subtle p-5">
+        <h2 class="text-center mb-4 text-danger-emphasis">Contact Us</h2>
+        <div class="w-50 mx-auto">
+          <form id="contactForm">
+            <div class="mb-3">
+              <label for="contactName" class="form-label"
+                >Name <sup class="text-danger">*</sup></label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="contactName"
+                placeholder="Enter your name"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="contactEmail" class="form-label"
+                >Email <sup class="text-danger">*</sup></label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="contactEmail"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="contactMessage" class="form-label"
+                >Message <sup class="text-danger">*</sup></label
+              >
+              <textarea
+                class="form-control"
+                id="contactMessage"
+                rows="5"
+                placeholder="Enter your message (minimum 10 characters)"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-success w-100">Submit</button>
+          </form>
+        </div>
+      </section>
+      <!-- login -->
+
+    <section class="login m-5 bg-success-subtle p-5">
+        <h2 class="text-center mb-4 text-danger-emphasis">Login</h2>
+        <div class="w-50 mx-auto">
+            <form id="loginForm">
+                <div class="mb-3">
+                    <label for="loginEmail" class="form-label">Email <sup class="text-danger">*</sup></label>
+                    <input type="email" class="form-control" id="loginEmail" placeholder="Enter your email" required />
+                </div>
+                <div class="mb-3">
+                    <label for="loginPassword" class="form-label">Password <sup class="text-danger">*</sup></label>
+                    <input type="password" class="form-control" id="loginPassword" placeholder="Enter your password" required />
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="rememberMe" />
+                    <label class="form-check-label" for="rememberMe">Remember me</label>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Login</button>
+                <p class="text-center mt-3">Don't have an account? <a href="/register">Register here</a></p>
+            </form>
+        </div>
+    </section>
+
+    <!-- register page -->
+    <section class="register m-5 bg-success-subtle p-5">
+        <h2 class="text-center mb-4 text-danger-emphasis">Register</h2>
+        <div class="w-50 mx-auto">
+            <form id="registerForm">
+                <div class="mb-3">
+                    <label for="registerName" class="form-label">Full Name <sup class="text-danger">*</sup></label>
+                    <input type="text" class="form-control" id="registerName" placeholder="Enter your full name" required />
+                </div>
+                <div class="mb-3">
+                    <label for="registerEmail" class="form-label">Email <sup class="text-danger">*</sup></label>
+                    <input type="email" class="form-control" id="registerEmail" placeholder="Enter your email" required />
+                </div>
+                <div class="mb-3">
+                    <label for="registerPhone" class="form-label">Phone Number <sup class="text-danger">*</sup></label>
+                    <input type="tel" class="form-control" id="registerPhone" placeholder="Enter your phone number" required />
+                </div>
+                <div class="mb-3">
+                    <label for="registerPassword" class="form-label">Password <sup class="text-danger">*</sup></label>
+                    <input type="password" class="form-control" id="registerPassword" placeholder="Enter your password" required />
+                </div>
+                <div class="mb-3">
+                    <label for="registerConfirmPassword" class="form-label">Confirm Password <sup class="text-danger">*</sup></label>
+                    <input type="password" class="form-control" id="registerConfirmPassword" placeholder="Confirm your password" required />
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="agreeTerms" required />
+                    <label class="form-check-label" for="agreeTerms">I agree to the terms and conditions</label>
+                </div>
+                <button type="submit" class="btn btn-success w-100">Register</button>
+                <p class="text-center mt-3">Already have an account? <a href="/login">Login here</a></p>
+            </form>
+        </div>
+    </section>
+    
+   
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

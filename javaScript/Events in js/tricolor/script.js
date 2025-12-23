@@ -13,7 +13,7 @@ function changeHeading(text) {
 }
 
 const bp = document.getElementById("P-color");
-bp.addEventListener("change" , () => changetext(bp.value));
+bp.addEventListener("change", () => changetext(bp.value));
 
 function changetext(kuchhbhi) {
   document.getElementById("text").style.color = kuchhbhi;
